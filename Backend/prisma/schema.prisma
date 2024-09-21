@@ -1,0 +1,130 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb" //postgresql
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  email    String @unique
+  type     Role
+  name     String
+  password String
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+// Define the base model for Node
+model Node {
+  id            String        @id @default(auto()) @map("_id") @db.ObjectId
+  type          NodeType
+  name          String
+  coordinates   Coordinates   @relation(fields: [coordinatesId], references: [id]) // You might want to use a specific data type for coordinates
+  Restaurant    Restaurant[]
+  Bathroom      Bathroom[]
+  LiftStation   LiftStation[]
+  coordinatesId String        @db.ObjectId
+  edgesFrom     Edge[]        @relation("EdgeFrom")
+  edgesTo       Edge[]        @relation("EdgeTo")
+  SlopeStart    SlopeStart[]
+  SlopeEnd      SlopeEnd[]
+}
+
+// Define models for specific types of nodes with their own attributes
+model Restaurant {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  node   Node   @relation(fields: [nodeId], references: [id])
+  nodeId String @db.ObjectId
+  menu   String // Example attribute for a restaurant
+}
+
+model Bathroom {
+  id         String  @id @default(auto()) @map("_id") @db.ObjectId
+  node       Node    @relation(fields: [nodeId], references: [id])
+  nodeId     String  @db.ObjectId
+  hasShowers Boolean // Example attribute for a bathroom
+}
+
+model LiftStation {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  node     Node   @relation(fields: [nodeId], references: [id])
+  nodeId   String @db.ObjectId
+  capacity Int // Example attribute for a lift station
+}
+
+model SlopeStart {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  node       Node   @relation(fields: [nodeId], references: [id])
+  nodeId     String @db.ObjectId
+}
+
+model SlopeEnd {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  node        Node   @relation(fields: [nodeId], references: [id])
+  nodeId      String @db.ObjectId
+  description String // Example attribute for the end of a slope
+}
+
+// Define the base model for Edge
+model Edge {
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
+  type       EdgeType
+  name       String?
+  fromNode   Node      @relation("EdgeFrom", fields: [fromNodeId], references: [id])
+  toNode     Node      @relation("EdgeTo", fields: [toNodeId], references: [id])
+  Slope      Slope[]
+  SkiLift    SkiLift[]
+  length     Float
+  timeTaken  Float
+  fromNodeId String    @db.ObjectId
+  toNodeId   String    @db.ObjectId
+}
+
+// Define models for specific types of edges with their own attributes
+model Slope {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  edge       Edge   @relation(fields: [edgeId], references: [id])
+  edgeId     String @db.ObjectId
+  difficulty Float
+}
+
+model SkiLift {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  edge   Edge   @relation(fields: [edgeId], references: [id])
+  edgeId String @db.ObjectId
+}
+
+model Coordinates {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  x    Int
+  y    Int
+  Node Node[]
+}
+
+// Define the NodeType enum
+enum NodeType {
+  NONE //TODO: remove this later
+  RESTAURANT
+  BATHROOM
+  LIFT_STATION
+  SLOPE_START
+  SLOPE_END
+}
+
+// Define the EdgeType enum
+enum EdgeType {
+  SLOPE
+  SKI_LIFT
+}

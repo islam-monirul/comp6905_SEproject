@@ -1,0 +1,40 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 65vh;
+  padding: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+  margin-top: 28px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1271147/pexels-photo-1271147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover; /* or contain, depending on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cover > * {
+  margin-block: 1rem;
+}
+
+.cover > :first-child:not(div) {
+  margin-block-start: 0;
+}
+
+.cover > :last-child:not(div) {
+  margin-block-end: 0;
+}
+
+.cover > div {
+  margin-block: auto;
+  margin-inline-start: 36px;
+}
+
+.cover > div > button {
+  margin-block-start: 1rem;
+}
+
+.cover > div > h2 {
+  font-weight: 200;
+}

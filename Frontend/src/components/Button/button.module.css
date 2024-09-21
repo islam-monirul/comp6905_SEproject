@@ -1,0 +1,9 @@
+button {
+  background-color: var(--color-primary);
+  color: var(--white);
+  padding-inline: 16px;
+  padding-block: 6px;
+  border: 0;
+  border-radius: 40px;
+  max-width: 150px;
+}

@@ -1,0 +1,6 @@
+.box {
+  --size: 200px;
+  padding: var(--s1, 0.5rem);
+  inline-size: var(--size);
+  margin: 0;
+}

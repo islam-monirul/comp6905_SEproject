@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid var(--grey);
+  justify-content: space-between;
+}
+
+.navbar:nth-child(2) {
+  margin-inline-start: auto;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}

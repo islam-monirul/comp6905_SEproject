@@ -1,0 +1,766 @@
+{
+	"info": {
+		"_postman_id": "ae311b20-c0e9-4739-81cb-8c355886f316",
+		"name": "MUN 6905",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22738699"
+	},
+	"item": [
+		{
+			"name": "Map",
+			"item": [
+				{
+					"name": "get all map",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/map/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"map",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get path",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startNodeId\": \"6606daa024cbf245758a31b4\",\n    \"targetNodeId\": \"6606daa024cbf245758a31b3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/map/path",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"map",
+								"path"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nodes",
+			"item": [
+				{
+					"name": "restaurant",
+					"item": [
+						{
+							"name": "get restaurants",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/node/restaurant/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"restaurant",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create restaurant",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Restaurant A\",\n    \"menu\": \"some menu\",\n    \"coordinates\": {\n        \"x\": 200,\n        \"y\": 100\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/node/restaurant",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"restaurant"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get restaurant by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/node/restaurant/65f5b294ae390ee567d7fe0f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"restaurant",
+										"65f5b294ae390ee567d7fe0f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete restaurant by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/node/restaurant/65f5b294ae390ee567d7fe0f",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"restaurant",
+										"65f5b294ae390ee567d7fe0f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update restaurant by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Restaurant AAAA\",\n    \"menu\":\"ksmk\",\n    \"coordinates\": {\n        \"x\": 10000,\n        \"y\": 20000\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/node/restaurant/65f6f2dadb11cafd3e950c53",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"restaurant",
+										"65f6f2dadb11cafd3e950c53"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bathroom",
+					"item": [
+						{
+							"name": "get bathrooms",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/node/bathroom/",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"bathroom",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create bathroom",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bathroom A\",\n    \"hasShowers\": false,\n    \"coordinates\": {\n        \"x\": 130,\n        \"y\": 130\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/node/bathroom/",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"bathroom",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get bathroom by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/node/bathroom/65f6f9d820396dbb2260464c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"bathroom",
+										"65f6f9d820396dbb2260464c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete bathroom by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/node/bathroom/65f6f9affb369bbcd0adb633",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"bathroom",
+										"65f6f9affb369bbcd0adb633"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update bathroom by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bathrrom AAAA\",\n    \"hasShowers\": true,\n    \"coordinates\": {\n        \"x\": 10000,\n        \"y\": 20000\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/node/bathroom/65f6f9affb369bbcd0adb633",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"bathroom",
+										"65f6f9affb369bbcd0adb633"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Lift Station",
+					"item": [
+						{
+							"name": "get lift Station",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/node/liftStation/",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"liftStation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create liftStation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"End Slope-EndSlopeA\",\n    \"description\": \"End Slope A\",\n    \"coordinates\": {\n        \"x\": 250,\n        \"y\": 150\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/node/slopeEnd",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"slopeEnd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get liftStation by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/node/liftStation/65f6fe762ac844c4abb0a584",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"liftStation",
+										"65f6fe762ac844c4abb0a584"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete liftStation by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/node/liftStation/65f7070ff321a83bab8991cd",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"node",
+										"liftStation",
+										"65f7070ff321a83bab8991cd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update liftStation by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Lift Station AAAA\",\n    \"coordinates\": {\n        \"x\": 10000,\n        \"y\": 20000\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/node/liftStation/65f6fe59b3da4e9043bce372",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"node",
+										"liftStation",
+										"65f6fe59b3da4e9043bce372"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Edges",
+			"item": [
+				{
+					"name": "Slope",
+					"item": [
+						{
+							"name": "Get Slopes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/edge/slope",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"edge",
+										"slope"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Slope By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/edge/slope/65f5b294ae390ee567d7fe12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"slope",
+										"65f5b294ae390ee567d7fe12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Slope By ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/edge/slope/65f7076a0e90a3eb6c31e290",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"edge",
+										"slope",
+										"65f7076a0e90a3eb6c31e290"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create Slope",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"difficulty\": \"easy\",\n    \"name\": \"Start Slope-EndSlopA-2\",\n    \"fromNodeId\": \"65fa5babac2deb5d829694c3\",\n    \"toNodeId\": \"65fa56a1a353985708eb7e76\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/edge/slope",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"slope"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Slope by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"difficulty\": \"difficulty\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/edge/slope/65f5b294ae390ee567d7fe12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"slope",
+										"65f5b294ae390ee567d7fe12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "skiLift",
+					"item": [
+						{
+							"name": "Get skiLift",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/edge/skiLift",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"edge",
+										"skiLift"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get skilift By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/edge/skiLift/65fa055c7ef408b4b8afd913",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"skiLift",
+										"65fa055c7ef408b4b8afd913"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete skilift By ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}/edge/skiLift/65fa055c7ef408b4b8afd913",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"edge",
+										"skiLift",
+										"65fa055c7ef408b4b8afd913"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create skilift",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"length\": 20,\n    \"name\": \"skilift 1\",\n    \"fromNodeId\": \"65fa56a1a353985708eb7e76\",\n    \"toNodeId\": \"65fa5b5fb87fd34dedf4507a\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/edge/skiLift",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"skiLift"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Slope by ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"length\": 12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/edge/skiLift/65fa055c7ef408b4b8afd913",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"edge",
+										"skiLift",
+										"65fa055c7ef408b4b8afd913"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sergisamirboules@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sergisamirboules@gmail.com\",\n    \"password\": \"123456\",\n    \"name\": \"sergi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/register",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://ski-resort-map.onrender.com",
+			"type": "string"
+		}
+	]
+}

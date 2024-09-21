@@ -1,0 +1,802 @@
+{
+    "nodes": [
+        {
+            "type": "NONE",
+            "name": "Weitentallift Top Station (T-bar) / Sonnenbahn Top Station (Double chairlift)",
+            "coordinates": {
+                "x": 69,
+                "y": 111
+            },
+            "nodeId": "1"
+        },
+        {
+            "type": "NONE",
+            "name": "Weitentallift Base Station (T-bar)",
+            "coordinates": {
+                "x": 18,
+                "y": 75
+            },
+            "nodeId": "2"
+        },
+        {
+            "type": "NONE",
+            "name": "Sonnenbahn Base Station (Double chairlift)",
+            "coordinates": {
+                "x": 105,
+                "y": 103
+            },
+            "nodeId": "3"
+        },
+        {
+            "type": "NONE",
+            "name": "Seitensprunglift Top Station (T-bar)",
+            "coordinates": {
+                "x": 58,
+                "y": 86
+            },
+            "nodeId": "4"
+        },
+        {
+            "type": "NONE",
+            "name": "Seitensprunglift Base Station (T-bar) / Turrachbahn Top Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 76,
+                "y": 84
+            },
+            "nodeId": "5"
+        },
+        {
+            "type": "NONE",
+            "name": "Turrachbahn Base Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 22,
+                "y": 23
+            },
+            "nodeId": "6"
+        },
+        {
+            "type": "NONE",
+            "name": "Zirbenwaldbahn Top Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 87,
+                "y": 84
+            },
+            "nodeId": "7"
+        },
+        {
+            "type": "NONE",
+            "name": "Zirbenwaldbahn Base Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 97,
+                "y": 45
+            },
+            "nodeId": "8"
+        },
+        {
+            "type": "NONE",
+            "name": "Wildkopflift Top Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 94,
+                "y": 87
+            },
+            "nodeId": "9"
+        },
+        {
+            "type": "NONE",
+            "name": "Wildkopflift Base Station (Sixpack charilift)",
+            "coordinates": {
+                "x": 112,
+                "y": 83
+            },
+            "nodeId": "10"
+        },
+        {
+            "type": "NONE",
+            "name": "Maulwurf Base Station (T-bar)",
+            "coordinates": {
+                "x": 117,
+                "y": 78
+            },
+            "nodeId": "11"
+        },
+        {
+            "type": "NONE",
+            "name": "Maulwurf Top Station (T-bar) / Englanderlift Base Station (T-bar) / Kornockbahn Base Statoin (Sixpack charilift)",
+            "coordinates": {
+                "x": 124,
+                "y": 81
+            },
+            "nodeId": "12"
+        },
+        {
+            "type": "NONE",
+            "name": "Englanderlift Top Station (T-bar) / Ubungswiesenlift Base Station (T-bar)",
+            "coordinates": {
+                "x": 140,
+                "y": 93
+            },
+            "nodeId": "13"
+        },
+        {
+            "type": "NONE",
+            "name": "Ubungswiesenlift Top Station (T-bar)",
+            "coordinates": {
+                "x": 120,
+                "y": 94
+            },
+            "nodeId": "14"
+        },
+        {
+            "type": "NONE",
+            "name": "Ottifantenlift Top Station (T-bar)",
+            "coordinates": {
+                "x": 119,
+                "y": 96
+            },
+            "nodeId": "15"
+        },
+        {
+            "type": "NONE",
+            "name": "Ottifantenlift Base Station (T-bar) / Nocky-Blitz Base Station (Magic carpet)",
+            "coordinates": {
+                "x": 129,
+                "y": 95
+            },
+            "nodeId": "16"
+        },
+        {
+            "type": "NONE",
+            "name": "Panoramabahn Top Station (Charilift gondola)",
+            "coordinates": {
+                "x": 121,
+                "y": 106
+            },
+            "nodeId": "17"
+        },
+        {
+            "type": "NONE",
+            "name": "Panoramabahn Base Station (Charilift gondola) / Huttenexpress Top Station (T-bar)",
+            "coordinates": {
+                "x": 105,
+                "y": 104
+            },
+            "nodeId": "18"
+        },
+        {
+            "type": "NONE",
+            "name": "Huttenexpress Base Station (T-bar)",
+            "coordinates": {
+                "x": 158,
+                "y": 98
+            },
+            "nodeId": "19"
+        },
+        {
+            "type": "NONE",
+            "name": "Kornockbahn Top Statoin (Sixpack charilift)",
+            "coordinates": {
+                "x": 187,
+                "y": 128
+            },
+            "nodeId": "20"
+        },
+        {
+            "type": "NONE",
+            "name": "Kirschkogellift Base Statoin (T-bar)",
+            "coordinates": {
+                "x": 149,
+                "y": 84
+            },
+            "nodeId": "21"
+        },
+        {
+            "type": "NONE",
+            "name": "Kirschkogellift Top Statoin (T-bar)",
+            "coordinates": {
+                "x": 183,
+                "y": 96
+            },
+            "nodeId": "22"
+        },
+        {
+            "type": "NONE",
+            "name": "Schaffalmbahn Top Statoin (Sixpack charilift)",
+            "coordinates": {
+                "x": 195,
+                "y": 104
+            },
+            "nodeId": "23"
+        },
+        {
+            "type": "NONE",
+            "name": "Schaffalmbahn Base Statoin (Sixpack charilift)",
+            "coordinates": {
+                "x": 206,
+                "y": 27
+            },
+            "nodeId": "24"
+        }
+    ],
+    "edges": [
+        {
+            "id": "1",
+            "type": "SKI_LIFT",
+            "name": "Weitentallift (T-bar)",
+            "fromNodeId": "1",
+            "toNodeId": "2",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "2",
+            "type": "SKI_LIFT",
+            "name": "Weitentallift (T-bar)",
+            "fromNodeId": "2",
+            "toNodeId": "1",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "3",
+            "type": "SLOPE",
+            "name": "24 Weitentalabfahrt",
+            "fromNodeId": "1",
+            "toNodeId": "2",
+            "difficulty": 1.5,
+            "length": 1.4,
+            "timeTaken": 1.68
+        },
+        {
+            "id": "4",
+            "type": "SLOPE",
+            "name": "23 Schwarzseeabfahrt",
+            "fromNodeId": "1",
+            "toNodeId": "2",
+            "difficulty": 1.5,
+            "length": 1.45,
+            "timeTaken": 1.74
+        },
+        {
+            "id": "5",
+            "type": "SKI_LIFT",
+            "name": "Sonnenbahn (Double chairlift)",
+            "fromNodeId": "1",
+            "toNodeId": "3",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "6",
+            "type": "SKI_LIFT",
+            "name": "Sonnenbahn (Double chairlift)",
+            "fromNodeId": "3",
+            "toNodeId": "1",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "7",
+            "type": "SLOPE",
+            "name": "25 Abfahrt Sonnenbahn",
+            "fromNodeId": "1",
+            "toNodeId": "3",
+            "difficulty": 1.5,
+            "length": 0.83,
+            "timeTaken": 0.996
+        },
+        {
+            "id": "8",
+            "type": "SLOPE",
+            "name": "33 Ski - Rodelweg",
+            "fromNodeId": "1",
+            "toNodeId": "3",
+            "difficulty": 1,
+            "length": 0.88,
+            "timeTaken": 1.056
+        },
+        {
+            "id": "9",
+            "type": "SKI_LIFT",
+            "name": "Seitensprunglift (T-bar) ",
+            "fromNodeId": "4",
+            "toNodeId": "5",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "10",
+            "type": "SKI_LIFT",
+            "name": "Seitensprunglift (T-bar) ",
+            "fromNodeId": "5",
+            "toNodeId": "4",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "11",
+            "type": "SLOPE",
+            "name": "22 Seitensprung",
+            "fromNodeId": "5",
+            "toNodeId": "2",
+            "difficulty": 1.5,
+            "length": 0.8,
+            "timeTaken": 0.96
+        },
+        {
+            "id": "12",
+            "type": "SLOPE",
+            "name": "36 Alibi fur Seitensprung",
+            "fromNodeId": "4",
+            "toNodeId": "5",
+            "difficulty": 1,
+            "length": 0.65,
+            "timeTaken": 0.78
+        },
+        {
+            "id": "13",
+            "type": "SLOPE",
+            "name": "32 Skiweg zur Sonnenbahn",
+            "fromNodeId": "3",
+            "toNodeId": "5",
+            "difficulty": 1,
+            "length": 1.25,
+            "timeTaken": 1.5
+        },
+        {
+            "id": "14",
+            "type": "SKI_LIFT",
+            "name": "Turrachbahn (Sixpack charilift)",
+            "fromNodeId": "5",
+            "toNodeId": "6",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "15",
+            "type": "SKI_LIFT",
+            "name": "Turrachbahn (Sixpack charilift)",
+            "fromNodeId": "6",
+            "toNodeId": "5",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "16",
+            "type": "SLOPE",
+            "name": "21 Eisenhutabfahrt / 35 Direttissima",
+            "fromNodeId": "5",
+            "toNodeId": "6",
+            "difficulty": 2,
+            "length": 2.0,
+            "timeTaken": 2.4
+        },
+        {
+            "id": "17",
+            "type": "SLOPE",
+            "name": "31 Skiweg zur Turrachbahn",
+            "fromNodeId": "2",
+            "toNodeId": "6",
+            "difficulty": 1,
+            "length": 2.1,
+            "timeTaken": 2.52
+        },
+        {
+            "id": "18",
+            "type": "SLOPE",
+            "name": "20 FIS - Abfahrt",
+            "fromNodeId": "5",
+            "toNodeId": "6",
+            "difficulty": 1.5,
+            "length": 2.15,
+            "timeTaken": 2.58
+        },
+        {
+            "id": "19",
+            "type": "SLOPE",
+            "name": "37 Alibi fur Fis Abfahrt",
+            "fromNodeId": "5",
+            "toNodeId": "6",
+            "difficulty": 1,
+            "length": 2.16,
+            "timeTaken": 2.592
+        },
+        {
+            "id": "20",
+            "type": "SKI_LIFT",
+            "name": "Zirbenwaldbahn (Sixpack charilift)",
+            "fromNodeId": "7",
+            "toNodeId": "8",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "21",
+            "type": "SKI_LIFT",
+            "name": "Zirbenwaldbahn (Sixpack charilift)",
+            "fromNodeId": "8",
+            "toNodeId": "7",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "22",
+            "type": "SLOPE",
+            "name": "19 Zirbenwaldabfahrt",
+            "fromNodeId": "7",
+            "toNodeId": "8",
+            "difficulty": 1.5,
+            "length": 1.2,
+            "timeTaken": 1.44
+        },
+        {
+            "id": "23",
+            "type": "SLOPE",
+            "name": "18 Marchenwaldabfahrt",
+            "fromNodeId": "7",
+            "toNodeId": "8",
+            "difficulty": 1.0,
+            "length": 1.9,
+            "timeTaken": 2.28
+        },
+        {
+            "id": "24",
+            "type": "SKI_LIFT",
+            "name": "Wildkopflift (Sixpack charilift)",
+            "fromNodeId": "9",
+            "toNodeId": "10",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "25",
+            "type": "SKI_LIFT",
+            "name": "Wildkopflift (Sixpack charilift)",
+            "fromNodeId": "10",
+            "toNodeId": "9",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "26",
+            "type": "SLOPE",
+            "name": "27 Skiweg zum Wildkopflift",
+            "fromNodeId": "7",
+            "toNodeId": "10",
+            "difficulty": 1.0,
+            "length": 1.0,
+            "timeTaken": 1.2
+        },
+        {
+            "id": "26",
+            "type": "SLOPE",
+            "name": "26 Wildkopfabfahrt",
+            "fromNodeId": "9",
+            "toNodeId": "10",
+            "difficulty": 1.0,
+            "length": 0.7,
+            "timeTaken": 0.84
+        },
+        {
+            "id": "27",
+            "type": "SKI_LIFT",
+            "name": "Maulwurf (T-bar)",
+            "fromNodeId": "11",
+            "toNodeId": "12",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "28",
+            "type": "SKI_LIFT",
+            "name": "Maulwurf (T-bar)",
+            "fromNodeId": "12",
+            "toNodeId": "11",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "29",
+            "type": "SLOPE",
+            "name": "28 Skiweg zur Zirbenwaldbahn",
+            "fromNodeId": "10",
+            "toNodeId": "11",
+            "difficulty": 1.0,
+            "length": 0.3,
+            "timeTaken": 0.36
+        },
+        {
+            "id": "30",
+            "type": "SKI_LIFT",
+            "name": "Englanderlift (T-bar)",
+            "fromNodeId": "12",
+            "toNodeId": "13",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "30",
+            "type": "SKI_LIFT",
+            "name": "Englanderlift (T-bar)",
+            "fromNodeId": "13",
+            "toNodeId": "12",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "31",
+            "type": "SLOPE",
+            "name": "5 Englanderabfahrt",
+            "fromNodeId": "13",
+            "toNodeId": "12",
+            "difficulty": 1.5,
+            "length": 0.3,
+            "timeTaken": 0.36
+        },
+        {
+            "id": "32",
+            "type": "SKI_LIFT",
+            "name": "Ubungswiesenlift (T-bar)",
+            "fromNodeId": "14",
+            "toNodeId": "13",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "33",
+            "type": "SKI_LIFT",
+            "name": "Ubungswiesenlift (T-bar)",
+            "fromNodeId": "13",
+            "toNodeId": "14",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "34",
+            "type": "SLOPE",
+            "name": "7 Ubungswiesenabfahrt rechts",
+            "fromNodeId": "14",
+            "toNodeId": "13",
+            "difficulty": 1.0,
+            "length": 0.5,
+            "timeTaken": 0.6
+        },
+        {
+            "id": "35",
+            "type": "SKI_LIFT",
+            "name": "Ottifantenlift (T-bar)",
+            "fromNodeId": "15",
+            "toNodeId": "16",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "36",
+            "type": "SKI_LIFT",
+            "name": "Ottifantenlift (T-bar)",
+            "fromNodeId": "16",
+            "toNodeId": "15",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "37",
+            "type": "SLOPE",
+            "name": "6 Ubungswiesenabfahrt links",
+            "fromNodeId": "15",
+            "toNodeId": "13",
+            "difficulty": 1.5,
+            "length": 0.4,
+            "timeTaken": 0.48
+        },
+        {
+            "id": "38",
+            "type": "SKI_LIFT",
+            "name": "Panoramabahn (Chairlift gondola)",
+            "fromNodeId": "17",
+            "toNodeId": "18",
+            "length": 0,
+            "timeTaken": 10.0
+        },
+        {
+            "id": "39",
+            "type": "SKI_LIFT",
+            "name": "Panoramabahn (Chairlift gondola)",
+            "fromNodeId": "18",
+            "toNodeId": "17",
+            "length": 0,
+            "timeTaken": 10.0
+        },
+        {
+            "id": "40",
+            "type": "SLOPE",
+            "name": "12 Panoramaabfahrt",
+            "fromNodeId": "17",
+            "toNodeId": "18",
+            "difficulty": 1.5,
+            "length": 0.95,
+            "timeTaken": 1.14
+        },
+        {
+            "id": "41",
+            "type": "SLOPE",
+            "name": "13 Landereckabfahrt",
+            "fromNodeId": "18",
+            "toNodeId": "15",
+            "difficulty": 1.5,
+            "length": 0.4,
+            "timeTaken": 0.48
+        },
+        {
+            "id": "42",
+            "type": "SKI_LIFT",
+            "name": "Huttenexpress (T-bar)",
+            "fromNodeId": "18",
+            "toNodeId": "19",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "43",
+            "type": "SKI_LIFT",
+            "name": "Huttenexpress (T-bar)",
+            "fromNodeId": "19",
+            "toNodeId": "18",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "44",
+            "type": "SLOPE",
+            "name": "9 Abfahrt Huttenexpress",
+            "fromNodeId": "18",
+            "toNodeId": "19",
+            "difficulty": 1.5,
+            "length": 0.4,
+            "timeTaken": 0.48
+        },
+        {
+            "id": "45",
+            "type": "SKI_LIFT",
+            "name": "Kornockbahn (Sixpack charilift)",
+            "fromNodeId": "12",
+            "toNodeId": "20",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "46",
+            "type": "SKI_LIFT",
+            "name": "Kornockbahn (Sixpack charilift)",
+            "fromNodeId": "20",
+            "toNodeId": "12",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "47",
+            "type": "SLOPE",
+            "name": "1 Kornockabfahrt",
+            "fromNodeId": "20",
+            "toNodeId": "12",
+            "difficulty": 1.0,
+            "length": 2.35,
+            "timeTaken": 2.82
+        },
+        {
+            "id": "48",
+            "type": "SLOPE",
+            "name": "2 Hirschkogelabfahrt",
+            "fromNodeId": "20",
+            "toNodeId": "12",
+            "difficulty": 1.5,
+            "length": 1.2,
+            "timeTaken": 1.44
+        },
+        {
+            "id": "49",
+            "type": "SKI_LIFT",
+            "name": "Hirschkogellift (T-bar)",
+            "fromNodeId": "21",
+            "toNodeId": "22",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "50",
+            "type": "SKI_LIFT",
+            "name": "Hirschkogellift (T-bar)",
+            "fromNodeId": "22",
+            "toNodeId": "21",
+            "length": 0,
+            "timeTaken": 5.0
+        },
+        {
+            "id": "51",
+            "type": "SLOPE",
+            "name": "8 Alibi - fur Panoramabahn",
+            "fromNodeId": "13",
+            "toNodeId": "21",
+            "difficulty": 1.0,
+            "length": 0.4,
+            "timeTaken": 0.48
+        },
+        {
+            "id": "52",
+            "type": "SKI_LIFT",
+            "name": "Schaffalmbahn (Sixpack charilift)",
+            "fromNodeId": "23",
+            "toNodeId": "24",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "53",
+            "type": "SKI_LIFT",
+            "name": "Schaffalmbahn (Sixpack charilift)",
+            "fromNodeId": "24",
+            "toNodeId": "23",
+            "length": 0,
+            "timeTaken": 7.0
+        },
+        {
+            "id": "54",
+            "type": "SLOPE",
+            "name": "3 Pauliabfahrt",
+            "fromNodeId": "22",
+            "toNodeId": "12",
+            "difficulty": 1.5,
+            "length": 1.3,
+            "timeTaken": 1.56
+        },
+        {
+            "id": "55",
+            "type": "SLOPE",
+            "name": "4 MAPAKI Familienabfahrt",
+            "fromNodeId": "22",
+            "toNodeId": "12",
+            "difficulty": 1.5,
+            "length": 1.1,
+            "timeTaken": 1.32
+        },
+        {
+            "id": "56",
+            "type": "SLOPE",
+            "name": "16 Schafkopfabfahrt",
+            "fromNodeId": "23",
+            "toNodeId": "22",
+            "difficulty": 1.5,
+            "length": 0.6,
+            "timeTaken": 0.72
+        },
+        {
+            "id": "57",
+            "type": "SLOPE",
+            "name": "14 Schafalmabfahrt",
+            "fromNodeId": "23",
+            "toNodeId": "24",
+            "difficulty": 1.5,
+            "length": 1.35,
+            "timeTaken": 1.62
+        },
+        {
+            "id": "58",
+            "type": "SLOPE",
+            "name": "15 Schafnase",
+            "fromNodeId": "23",
+            "toNodeId": "24",
+            "difficulty": 2.0,
+            "length": 1.1,
+            "timeTaken": 1.32
+        },
+        {
+            "id": "59",
+            "type": "SLOPE",
+            "name": "17 Lampelabfahrt",
+            "fromNodeId": "23",
+            "toNodeId": "24",
+            "difficulty": 1.0,
+            "length": 1.5,
+            "timeTaken": 1.8
+        }
+    ]
+}
